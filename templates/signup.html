@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/signup-bg.jpg') }}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>Signup Page</h1>
+                    <span class="subheading">Create an account to access more features.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>Fill in the details below to create your account.</p>
+                <div class="my-5">
+                    <!-- Signup Form -->
+                    <form class="form-signin" action="/signup" method="post">
+                        <h1 class="h3 mb-3 font-weight-normal">Create an Account</h1>
+
+                        <!-- First Name Input -->
+                        <label for="inputFirstName" class="sr-only">FIRSTNAME</label>
+                        <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" name="first_name" required>
+
+                        <!-- Last Name Input -->
+                        <label for="inputLastName" class="sr-only">LASTNAME</label>
+                        <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" name="last_name" required>
+
+                        <!-- Username Input -->
+                        <label for="inputUsername" class="sr-only">USERNAME</label>
+                        <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username" required>
+
+                        <!-- Password Input -->
+                        <label for="inputPassword" class="sr-only">PASSWORD</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+
+                        <!-- Submit Button -->
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+
+                        <!-- Footer Text -->
+                        <p class="mt-5 mb-3 text-muted">© {{ params['blog_name'] }} 2017-2018</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

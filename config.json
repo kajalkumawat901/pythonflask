@@ -1,0 +1,17 @@
+{
+    "params":
+    {
+      "local_server":"True",
+      "local_uri": "mysql://root:@localhost/firstpy",
+      "prod_uri":"mysql://root:@localhost/firstpy",
+      "fb_url":"https://facebook.com/firstpy",
+      "tw_url":"https://twitter.com/firstpy",
+      "gh_url": "https://github.com/firstpy",
+      "blog_name": "firstpy",
+      "tag_line": "Heaven for programmers",
+      "gmail-user":"k85993692@gmail.com",
+      "app-password":"pydf subj rqvz ufaf",
+      "login_image":"login.svg"
+     }
+  }
+  
